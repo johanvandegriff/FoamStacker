@@ -5,3 +5,6 @@
 
 ## Circuit Diagram
 ![the circuit diagram](circuit.jpg)
+
+## Photo
+![the game itself](FoamStacker1.jpg)
