@@ -1,9 +1,9 @@
 /*
    This sketch is for the ArduinOLED board. for more info, visit:
-   https://johanv.net/ArduinOLED
+   https://jjv.sh/ArduinOLED
 
    However, I am running it on a different board, just using the library, more info here:
-   https://johanv.net/FoamStacker
+   https://jjv.sh/FoamStacker
 */
 
 #include <Arduino.h>
@@ -62,13 +62,14 @@ void setupScreen() {
   display.setCursor(0, 0 * 10);
   display.print(F("     Foam Stacker"));
   display.setCursor(0, 1 * 10 + 5);
-  display.print(F("    https://johanv"));
+  display.print(F("    https://jjv.sh"));
   display.setCursor(0, 2 * 10 + 5);
-  display.print(F("   .net/FoamStacker"));
+  display.print(F("     /FoamStacker"));
   display.setCursor(0, 4 * 10);
   display.print(text);
   display.setCursor(0, 5 * 10);
-  display.print(F("  Hit any button :-]"));
+//  display.print(F("  Hit any button :-]"));
+  display.print(F(" Squeeze to start :-]"));
 }
 
 void resetScreen() {
@@ -77,7 +78,8 @@ void resetScreen() {
   display.setCursor(0, 2 * 10 + 5);
   display.print(F("     been reset."));
   display.setCursor(0, 5 * 10);
-  display.print(F("  Hit any button :-]"));
+//  display.print(F("  Hit any button :-]"));
+  display.print(F(" Squeeze to start :-]"));
 }
 
 bool ledState;
